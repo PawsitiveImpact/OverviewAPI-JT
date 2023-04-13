@@ -23,29 +23,29 @@ const controller = {
       })
   },
 
-  // getStyles: (req, res) => {
-  //   console.log('CONTROLLER getStyles: ', req.query.product_id);
-  //   model.getStyles(req.query.product_id)
-  //     .then((data) => {
-  //       res.status(200);
-  //       res.send(data);
-  //     })
-  //     .catch((err) => {
-  //       console.log('CONTROLLER getStyles error: ', err);
-  //     })
-  // },
+  getStyles: (req, res) => {
+    console.log('CONTROLLER getStyles: ', req.query.product_id);
+    model.getStyles(req.query.product_id)
+      .then((data) => {
+        res.status(200);
+        res.send(data);
+      })
+      .catch((err) => {
+        console.log('CONTROLLER getStyles error: ', err);
+      })
+  },
 
-  // getRelated: (req, res) => {
-  //   console.log('CONTROLLER getRelated: ', req.body);
-  //   model.getRelated(req.query.product_id)
-  //     .then((data) => {
-  //       res.status(200);
-  //       res.send(data);
-  //     })
-  //     .catch((err) => {
-  //       console.log('CONTROLLER getRelated error: ', err);
-  //     })
-  // }
+  getRelated: (req, res) => {
+    console.log('CONTROLLER getRelated: ', req.query.product_id);
+    model.getRelated(req.query.product_id)
+      .then((data) => {
+        res.status(200);
+        res.send(data);
+      })
+      .catch((err) => {
+        console.log('CONTROLLER getRelated error: ', err);
+      })
+  }
 }
 
 exports.controller = controller;
