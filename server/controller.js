@@ -13,7 +13,7 @@ const controller = {
   },
 
   getProduct: (req, res) => {
-    model.getProduct(req.query.product_id)
+    model.getProduct(req.params.product_id)
       .then((data) => {
         res.status(200);
         res.send(data);
@@ -24,8 +24,7 @@ const controller = {
   },
 
   getStyles: (req, res) => {
-    console.log('CONTROLLER getStyles: ', req.query.product_id);
-    model.getStyles(req.query.product_id)
+    model.getStyles(req.params.product_id)
       .then((data) => {
         res.status(200);
         res.send(data);
@@ -36,8 +35,7 @@ const controller = {
   },
 
   getRelated: (req, res) => {
-    console.log('CONTROLLER getRelated: ', req.query.product_id);
-    model.getRelated(req.query.product_id)
+    model.getRelated(req.params.product_id)
       .then((data) => {
         res.status(200);
         res.send(data);
