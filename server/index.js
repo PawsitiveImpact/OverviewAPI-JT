@@ -12,6 +12,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}.`);
 });
-
-// NOTE: Finish implementing first route (getAll), returning data to client in the shape as shown in FEC gLearn
-// Read article from Uncle Jay on query optimization
